@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NextView.swift
 //  NavigationStackExample
 //
 //  Created by Kotaro Fukuo on 2023/07/22.
@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NextView: View {
     @EnvironmentObject private var appRouter: AppRouter
 
     var body: some View {
         VStack {
+            Text("Next View")
             Button(action: {
-                appRouter.navigate(to: .nextView)
+                appRouter.presentedSheet = .sheetView
             }, label: {
-                Text("Next Button")
+                Text("Show sheet")
             })
         }
-        .injectRouter()
-        .padding()
+        .injectSheet(destination: $appRouter.presentedSheet)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NextView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NextView()
     }
 }

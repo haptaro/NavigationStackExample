@@ -14,6 +14,11 @@
 		DB13414C2A6C5031002D638D /* NavigationStackExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13414B2A6C5031002D638D /* NavigationStackExampleTests.swift */; };
 		DB1341562A6C5031002D638D /* NavigationStackExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1341552A6C5031002D638D /* NavigationStackExampleUITests.swift */; };
 		DB1341582A6C5031002D638D /* NavigationStackExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1341572A6C5031002D638D /* NavigationStackExampleUITestsLaunchTests.swift */; };
+		DB1341652A6C5A10002D638D /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1341642A6C5A10002D638D /* NextView.swift */; };
+		DB1341672A6C5A61002D638D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1341662A6C5A61002D638D /* AppRouter.swift */; };
+		DB13416B2A6C79BD002D638D /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13416A2A6C79BD002D638D /* SheetView.swift */; };
+		DB13416D2A6C800F002D638D /* SheetNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13416C2A6C800F002D638D /* SheetNavView.swift */; };
+		DB13416F2A6C84D5002D638D /* SheetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13416E2A6C84D5002D638D /* SheetRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		DB1341512A6C5031002D638D /* NavigationStackExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStackExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB1341552A6C5031002D638D /* NavigationStackExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackExampleUITests.swift; sourceTree = "<group>"; };
 		DB1341572A6C5031002D638D /* NavigationStackExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB1341642A6C5A10002D638D /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		DB1341662A6C5A61002D638D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		DB13416A2A6C79BD002D638D /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		DB13416C2A6C800F002D638D /* SheetNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavView.swift; sourceTree = "<group>"; };
+		DB13416E2A6C84D5002D638D /* SheetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				DB13413A2A6C502E002D638D /* NavigationStackExampleApp.swift */,
+				DB1341662A6C5A61002D638D /* AppRouter.swift */,
+				DB13416E2A6C84D5002D638D /* SheetRouter.swift */,
 				DB13413C2A6C502E002D638D /* ContentView.swift */,
+				DB13416A2A6C79BD002D638D /* SheetView.swift */,
+				DB13416C2A6C800F002D638D /* SheetNavView.swift */,
+				DB1341642A6C5A10002D638D /* NextView.swift */,
 				DB13413E2A6C5030002D638D /* Assets.xcassets */,
 				DB1341402A6C5030002D638D /* Preview Content */,
 			);
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB13416D2A6C800F002D638D /* SheetNavView.swift in Sources */,
+				DB1341672A6C5A61002D638D /* AppRouter.swift in Sources */,
 				DB13413D2A6C502E002D638D /* ContentView.swift in Sources */,
 				DB13413B2A6C502E002D638D /* NavigationStackExampleApp.swift in Sources */,
+				DB13416B2A6C79BD002D638D /* SheetView.swift in Sources */,
+				DB13416F2A6C84D5002D638D /* SheetRouter.swift in Sources */,
+				DB1341652A6C5A10002D638D /* NextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

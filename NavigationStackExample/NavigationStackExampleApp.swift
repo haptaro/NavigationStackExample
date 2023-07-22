@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct NavigationStackExampleApp: App {
+    @StateObject private var appRouter = AppRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack(path: $appRouter.currentPath) {
+                ContentView()
+            }
+            .environmentObject(appRouter)
         }
     }
 }
+
+
